@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファンコミュニティプラットフォーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>SECONDACT</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#services">CORE VALUE</a>
+                <a href="#pricing">PRICE</a>
+                <a href="#strengths">SUCCESS STORY</a>
+                <a href="#team">EXPERT TEAM</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav-cta">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-elements">
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+            <div class="bg-grid"></div>
+            <div class="particles">
+                <canvas id="particleCanvas"></canvas>
+            </div>
+        </div>
+        <div class="hero-content-center">
+            <div class="hero-badge">Second Career Platform</div>
+            <h1 class="hero-title">
+                <span class="hero-title-en">Craft Your Next Chapter</span>
+            </h1>
+            <p class="hero-description">
+                SECONDACT は、元タカラジェンヌ・アイドル卒メン・引退女優・元プロゲーマー・元吉本<br>
+                かつて拍手を浴びた才能が "いま" のステージで再び輝く場所。<br>
+                ファンクラブ運営・イベント運営・広告案件紹介・ライツマネジメントをワンストップで提供し、<br>
+                過去形の肩書きから現在進行形の物語へアップデートします。
+            </p>
+            <div class="hero-actions">
+                <button class="cta-button primary" onclick="scrollToContact()">
+                    CONTACT
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll</div>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">CORE VALUE 2.0<span class="title-accent">SECONDACT × EGG</span></h2>
+                <p class="section-subtitle">「第２幕」を本気で盛り上げる３つのチカラ</p>
+            </div>
+            
+            <div class="value-compact-grid">
+                <!-- Re-Spark Section -->
+                <div class="value-compact-card">
+                    <div class="value-compact-header">
+                        <div class="value-number">01</div>
+                        <div>
+                            <h3 class="value-title">再点火 Re-Spark</h3>
+                            <p class="value-subtitle">ファン熱量を再集結し、瞬時にバズを生む運用力</p>
+                        </div>
+                    </div>
+                    <div class="value-highlights">
+                        <div class="highlight-item">主要SNSぜんぶ丸ごとサポート</div>
+                        <div class="highlight-item">"バズるやり方"をプロが直伝</div>
+                        <div class="highlight-item">成功例で実力証明</div>
+                    </div>
+                </div>
+
+                <!-- Re-Build Section -->
+                <div class="value-compact-card">
+                    <div class="value-compact-header">
+                        <div class="value-number">02</div>
+                        <div>
+                            <h3 class="value-title">再設計 Re-Build</h3>
+                            <p class="value-subtitle">「稼げる仕組み」と「ファンクラブ」をゼロから整える</p>
+                        </div>
+                    </div>
+                    <div class="value-highlights">
+                        <div class="highlight-item">東証グロース上場企業のバックアップ</div>
+                        <div class="highlight-item">ファンクラブ × EC × チケッティング</div>
+                        <div class="highlight-item">写真・動画の権利整理＆グッズ化</div>
+                    </div>
+                </div>
+
+                <!-- Re-Stage Section -->
+                <div class="value-compact-card">
+                    <div class="value-compact-header">
+                        <div class="value-number">03</div>
+                        <div>
+                            <h3 class="value-title">再躍動 Re-Stage</h3>
+                            <p class="value-subtitle">イベントとコンテンツで、今のあなたにスポットライトを</p>
+                        </div>
+                    </div>
+                    <div class="value-highlights">
+                        <div class="highlight-item">イベント＆番組制作の豊富な実績</div>
+                        <div class="highlight-item">一流クリエイターを即アサイン</div>
+                        <div class="highlight-item">プロ仕様のクオリティを実現</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Case -->
+            <div class="success-showcase">
+                <div class="success-header">
+                    <h3>SUCCESS CASE</h3>
+                    <p>実績で証明する確かな実力</p>
+                </div>
+                <div class="success-content">
+                    <div class="person-photo">
+                        <img src="https://storage.googleapis.com/studio-design-asset-files/projects/1YWjwgVXOm/s-888x1153_v-fs_webp_0f936896-f33b-4871-afe3-2cf16e275bc3_small.webp" alt="深田えいみ">
+                    </div>
+                    <div class="person-info-compact">
+                        <h4>深田 えいみ<span class="person-en">FUKADA EIMI</span></h4>
+                        <div class="follower-grid">
+                            <div class="stat-item">
+                                <span class="platform">Instagram</span>
+                                <span class="count">2,953,000</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="platform">X (旧Twitter)</span>
+                                <span class="count">4,300,000</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="platform">YouTube</span>
+                                <span class="count">1,230,000</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="platform">TikTok</span>
+                                <span class="count">5,500,000</span>
+                            </div>
+                        </div>
+                        <p class="person-description-compact">
+                            元セクシー女優としての経歴を持ち、現在はインフルエンサー・実業家として多方面で活躍中。SNS総フォロワー数は1,300万人超。国内女性インフルエンサーとして常にトップ10入りしており、ユーモアと親しみやすさが魅力。YouTubeでは「NO NG」をコンセプトに、企画力と柔軟性を活かし、企業コラボやプロモーションでも高評価を得ている。また、自身のプロテインブランドを展開するなど、健康・美容分野にも注力。海外イベントでも存在感を発揮し、国内外で高い支持を誇る。
+                        </p>
+                        <a href="https://fukadaeimi.com/" target="_blank" class="external-link">fukadaeimi.com <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PRICE<span class="title-accent">料金</span></h2>
+                <p class="section-subtitle">初期費用・維持費用など一切かかりません。あなたの成功に合わせてお支払いいただくシステムです。</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>ファンクラブ運営パッケージ</h3>
+                        <div class="pricing-badge">人気</div>
+                    </div>
+                    <div class="price">
+                        <div class="price-amount">
+                            <span class="currency">¥</span>
+                            <span class="amount">0</span>
+                            <span class="period">/初期費用</span>
+                        </div>
+                        <div class="price-note">売上の一部をレベニューシェア</div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <span>ファンクラブサイト完全カスタム</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>物販管理・会費徴収システム</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>ライブ会場での電子チケットもぎり</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>SNS運用 & 広告案件</h3>
+                    </div>
+                    <div class="price">
+                        <div class="price-amount">
+                            <span class="currency">¥</span>
+                            <span class="amount">0</span>
+                            <span class="period">/月額</span>
+                        </div>
+                        <div class="price-note">案件成約時のみ手数料発生</div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <span>Instagram・YouTube・TikTok・X 運用</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>ナショナルクライアント案件マッチング</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>バズる動画制作ノウハウ提供</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-notes">
+                <h4>ご利用条件</h4>
+                <ul>
+                    <li>すべてのサービスで初期費用・月額費用は一切かかりません</li>
+                    <li>成果が出た分のみレベニューシェアでお支払いいただきます</li>
+                    <li>東証グロース上場企業のバックアップによる安心の運営体制</li>
+                    <li>過去の実績や写真・動画の権利整理も含めてサポート</li>
+                    <li>専属の編集者・クリエイターチームをアサイン可能</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths Section -->
+    <section id="strengths" class="strengths">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">SUCCESS STORY<span class="title-accent">実績で証明する実力</span></h2>
+            </div>
+            <div class="strengths-grid">
+                <div class="strength-card">
+                    <div class="strength-header">
+                        <div class="strength-number">1300万+</div>
+                    </div>
+                    <h3>SNS総フォロワー数</h3>
+                    <p>専属タレント 深田えいみ は YouTube 開設3ヶ月でインフルエンサーパワーランキング3位に躍進。現在 SNS総フォロワー 1,300 万人超で、日本人女性でトップ３の影響力！</p>
+                </div>
+                <div class="strength-card">
+                    <div class="strength-header">
+                        <div class="strength-badge">東証グロース</div>
+                    </div>
+                    <h3>上場企業の安心基盤</h3>
+                    <p>東証グロース上場・インターネット広告企業 ログリー株式会社（TYO:6579） のデータ&広告基盤を活用。毎月500社を超えるクライアントとの取引実績。</p>
+                </div>
+                <div class="strength-card">
+                    <div class="strength-header">
+                        <div class="strength-badge">12万同時視聴</div>
+                    </div>
+                    <h3>圧倒的なイベント実績</h3>
+                    <p>登録者30万人超の LIVE 配信で総同時視聴12万を記録した「炎上万博」をはじめ、大型 YouTube 番組やファンミを多数プロデュース。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Team Section -->
+    <section id="team" class="sponsor-matching">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">EXPERT TEAM<span class="title-accent">一流のプロフェッショナル</span></h2>
+                <p class="section-subtitle">バズる動画制作からライツマネジメントまで、各分野のトップ人材があなたをサポート</p>
+            </div>
+            
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-indicator">
+                        <div class="step-number">PRO</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>バズるノウハウを直伝</h3>
+                        <p>ダイヤモンド社『バズる動画・ライブ配信確実に拡散するしくみ』著者であり、日本最古ライバー「飯田祐基」が直接コンサルティング</p>
+                    </div>
+                </div>
+                <div class="process-connector">
+                    <div class="connector-line"></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-indicator">
+                        <div class="step-number">TEAM</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>超有名クリエイター陣</h3>
+                        <p>登録100万超 YouTuberの編集を手掛ける超有名編集者や、天才トラックメイカーの<a href="https://x.com/chibanyan_music" target="_blank" class="inline-link">チバニャン</a>ほか、国内外のトップ人材を手配</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">よくある質問</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-label">Q</span>
+                        <h3>導入までのスケジュール感を教えてください。</h3>
+                        <div class="faq-toggle">
+                            <span class="toggle-text">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-label">A</span>
+                        <p>初回の商談からコミュニティ開設までに、最短で2週間程度いただいております。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-label">Q</span>
+                        <h3>費用はどれくらいかかりますか？</h3>
+                        <div class="faq-toggle">
+                            <span class="toggle-text">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-label">A</span>
+                        <p>先出費用含めた初期費用は基本的に一切かかりません。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-label">Q</span>
+                        <h3>ファンクラブ以外にどのような使い方ができますか。</h3>
+                        <div class="faq-toggle">
+                            <span class="toggle-text">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-label">A</span>
+                        <p>月額制のオンラインサロンや、自身が講師として年額制のアカデミーとして利用することが可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership">
+        <div class="container">
+            <div class="partnership-content">
+                <p class="partnership-text">
+                    FAN CONNECTは、1SECからアカデミー運営、ファンサイト運営並びにweb3のノウハウと技術基盤の提供している共同サービスです。
+                </p>
+                <div class="partner-logos">
+                    <div class="partner-logo">
+                        <span>EGG inc</span>
+                    </div>
+                    <div class="logo-separator">×</div>
+                    <div class="partner-logo">
+                        <span>1SEC inc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">あなたの「第２幕」を、いま始めよう。</h2>
+                <p class="cta-subtitle">過去形の肩書きから現在進行形の物語へ。<br>SECONDACTで新しいステージの扉を開きませんか？</p>
+                <div class="cta-actions">
+                    <button class="cta-button large primary" onclick="scrollToContact()">
+                        CONTACT
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SECONDACT</h3>
+                    <p>Craft Your Next Chapter</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>メニュー</h4>
+                        <a href="#services">CORE VALUE</a>
+                        <a href="#pricing">PRICE</a>
+                        <a href="#strengths">SUCCESS STORY</a>
+                        <a href="#team">EXPERT TEAM</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="mailto:info@secondact.jp">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; EGG Co., Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
