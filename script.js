@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Add animation to sections
-    const sections = document.querySelectorAll('.services, .pricing, .strengths, .sponsor-matching, .faq');
+    const sections = document.querySelectorAll('.service-section, .services, .pricing, .strengths, .faq');
     
     sections.forEach(section => {
         section.style.opacity = '0';
@@ -219,9 +219,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add stagger animation to cards
-    const cards = document.querySelectorAll('.value-section, .pricing-card, .strength-card');
+    const cards = document.querySelectorAll('.service-item, .value-section-full, .pricing-card, .strength-card');
     
     cards.forEach((card, index) => {
+        // Set initial state for animation
         card.style.opacity = '0';
         card.style.transform = 'translateY(30px)';
         card.style.transition = `opacity 0.8s ease ${index * 0.1}s, transform 0.8s ease ${index * 0.1}s`;
@@ -237,6 +238,16 @@ document.addEventListener('DOMContentLoaded', function() {
         
         cardObserver.observe(card);
     });
+    
+    // Fallback for mobile - ensure cards are visible if intersection observer fails
+    setTimeout(() => {
+        cards.forEach(card => {
+            if (card.style.opacity === '0') {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
+        });
+    }, 2000);
     
     // Parallax effect for hero section
     window.addEventListener('scroll', function() {
@@ -267,7 +278,7 @@ window.addEventListener('load', function() {
     document.body.classList.add('loaded');
     
     // Add loaded class for any additional animations
-    const heroElements = document.querySelectorAll('.hero-title-en, .hero-title-ja, .hero-description, .cta-button');
+    const heroElements = document.querySelectorAll('.hero-title-en, .hero-description, .cta-button');
     
     heroElements.forEach((element, index) => {
         setTimeout(() => {
@@ -279,7 +290,7 @@ window.addEventListener('load', function() {
 
 // Add smooth hover effects
 document.addEventListener('DOMContentLoaded', function() {
-    const hoverElements = document.querySelectorAll('.service-card, .strength-card, .cta-button, .detail-button, .partner-btn');
+    const hoverElements = document.querySelectorAll('.service-item, .value-section-full, .strength-card, .cta-button, .person-link-btn');
     
     hoverElements.forEach(element => {
         element.addEventListener('mouseenter', function() {
